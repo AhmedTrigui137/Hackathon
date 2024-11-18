@@ -1,4 +1,3 @@
-import React from 'react';
 import AlertItem from './AlertItem';
 
 export default function RecentAlerts() {

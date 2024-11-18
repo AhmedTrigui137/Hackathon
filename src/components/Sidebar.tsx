@@ -27,7 +27,7 @@ export default function Sidebar({ onViewChange, currentView }: SidebarProps) {
       id: 'teams',
       label: 'Teams',
       icon: Users,
-      count: 2,
+      count: 3,
       isActive: currentView === 'teams',
     },
     {

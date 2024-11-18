@@ -1,4 +1,3 @@
-import React from 'react';
 import { useConflictStore } from '../../store/conflictStore';
 import { AlertTriangle, Users, Clock, TrendingUp } from 'lucide-react';
 import MetricCard from './MetricCard';

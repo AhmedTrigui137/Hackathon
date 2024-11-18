@@ -1,4 +1,3 @@
-import React from 'react';
 import { useConflictStore } from '../../store/conflictStore';
 import { ResponsivePie } from '@nivo/pie';
 
