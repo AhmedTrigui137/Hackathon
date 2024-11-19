@@ -17,7 +17,7 @@ const mockTeams = [
     description: 'Responsible for user interface and experience',
     members: [
       { id: '1', name: 'Ahmed Trigui', role: 'Lead Developer', avatar: m3alem },
-      { id: '2', name: 'Arij Zaidi', role: 'UI Developer', avatar: arij },
+      { id: '3', name: 'Mohamed Ali Toufahi', role: 'UI Developer', avatar: mohamed },
     ],
     metrics: {
       productivity: 87,
@@ -29,7 +29,7 @@ const mockTeams = [
     name: 'Backend Team',
     description: 'API and infrastructure development',
     members: [
-      { id: '3', name: 'Mohamed Ali Toufahi', role: 'Backend Lead', avatar: mohamed },
+      { id: '2', name: 'Arij Zaidi', role: 'DevOps Engineer', avatar: arij },
       { id: '4', name: 'Ahmed Toufahi', role: 'Backend Lead', avatar: ahmed },
       { id: '5', name: 'Ossama Ferjani', role: 'DevOps Engineer', avatar: ossama },
     ],

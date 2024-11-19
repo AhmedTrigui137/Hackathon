@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Analytics from './components/Analytics';
 import { Teams } from './components/teams/Teams'; // Make sure you import the Teams component
-
+import {PredictiveAlerts} from './components/alerts/alert'
 function App() {
   const [currentView, setCurrentView] = React.useState('dashboard');
 
@@ -16,7 +16,8 @@ function App() {
         {/* Render the current view */}
         {currentView === 'dashboard' && <Dashboard />}
         {currentView === 'analytics' && <Analytics />}
-        {currentView === 'teams' && <Teams />} {/* Add Teams view */}
+        {currentView === 'teams' && <Teams />}
+        {currentView === 'alerts' && <PredictiveAlerts /> }
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
-import { MessageSquare, Users, BarChart2, Settings, HelpCircle } from 'lucide-react';
+import { MessageSquare, Users, BarChart2, Settings, HelpCircle, AlertCircle } from 'lucide-react';
 import SidebarMenuItem from './sidebar/SidebarMenuItem';
 import QuickStats from './sidebar/QuickStats';
 import { MenuItem } from './sidebar/types';
-
+import image from './logo.jpeg';
 interface SidebarProps {
   onViewChange: (view: string) => void;
   currentView: string;
@@ -31,6 +31,13 @@ export default function Sidebar({ onViewChange, currentView }: SidebarProps) {
       isActive: currentView === 'teams',
     },
     {
+      id: 'alerts',
+      label: 'Predictive Alerts',
+      icon : AlertCircle,
+      count: 3,
+      isActive: currentView === 'teams',
+    },
+    {
       id: 'settings',
       label: 'Settings',
       icon: Settings,
@@ -44,9 +51,11 @@ export default function Sidebar({ onViewChange, currentView }: SidebarProps) {
 
   return (
     <div className="w-64 bg-white border-r border-gray-200 flex flex-col">
-      <div className="p-4">
-        <h1 className="text-xl font-bold text-gray-800">ConfliGuard</h1>
+      <div className="flex items-center p-4 border-r border-gray-200">
+        <img src={image} alt="Logo" className="h-10 w-10 object-cover rounded" />
+        <h1 className="ml-2 text-lg font-bold text-gray-800">ConfliGuard</h1>
       </div>
+
       
       <QuickStats />
       
